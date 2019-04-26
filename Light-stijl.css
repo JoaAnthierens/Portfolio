@@ -1,0 +1,130 @@
+body {
+	font-family: helvetica;
+	font-size: 2rem;
+	padding: 3rem;
+  background-color: White;
+}
+
+main {
+	column-count: 1;
+}
+
+h1 {
+	margin-bottom: 3rem;
+	font-size: 3rem;
+  color: black;
+  font-weight: bold;
+}
+
+.menu {
+	position: fixed;
+	top: 3rem;
+	right: 3vw;
+	width: 40px;
+}
+
+nav {
+	display: none;
+	flex-direction: column;
+}
+
+nav a {
+	margin-bottom: 1rem;
+	text-decoration: none;
+	color: black;
+	font-weight: 300;
+}
+
+nav a:hover {
+	color: #78ffd6;
+}
+
+a {
+	display: block;
+	margin-bottom: 3rem;
+	break-inside: avoid;
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/break-inside */
+	text-decoration: none;
+	color: Black;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	margin-bottom: 2rem;
+}
+
+.lightmode {
+  width: 45px;
+  position: fixed;
+	top: 9.5rem;
+	right: 10rem;
+}
+
+.darkmode {
+  width: 40px;
+  position: fixed;
+	top: 9.5rem;
+	right: 3rem;
+}
+
+@media (min-width: 800px) {
+	main {
+		column-count: 2;
+		column-gap: 5vw;
+	}
+
+	.menu {
+		left: 43vw;
+	}
+
+	.lightmode {
+		right: 58vw;
+	}
+
+	.darkmode {
+		right: 52vw;
+	}
+}
+
+@media (min-width: 1100px) {
+		nav {
+			background-image: linear-gradient(#007991, #78ffd6);
+			width: 25vw;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			right: 0;
+			padding: 5rem;
+		}
+
+		nav a {
+			color: white;
+			font-size: 2.25rem;
+			margin-bottom: 3rem;
+			font-weight: 500;
+		}
+
+		main {
+			min-height: 88vh;
+      column-count: 3;
+  		column-gap: 5vw;
+		}
+
+		.menu {
+			left: 28.5vw;
+		}
+
+    .lightmode {
+      width: 55px;
+      top: 90vh;
+    	bottom: 6.3rem;
+    	right: 23rem;
+    }
+
+    .darkmode {
+      width: 50px;
+      top: 90vh;
+    	bottom: 3rem;
+    	right: 16rem;
+}
